@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.navbar h1 {
+    color: #ff003c;
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff003c;
+}
+
+/* Card Box */
+.box {
+    width: 420px;
+    margin: 120px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff003c;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+}
+
+input {
+    background: #222;
+    color: white;
+}
+
+button {
+    background: #ff003c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cc002f;
+}
+
+/* Messages */
+.message {
+    text-align: center;
+    color: #ff003c;
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
